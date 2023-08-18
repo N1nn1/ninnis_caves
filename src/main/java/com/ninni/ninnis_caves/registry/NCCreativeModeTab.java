@@ -24,6 +24,8 @@ public class NCCreativeModeTab {
                 output.accept(LIMESTONE_BRICK_STAIRS);
                 output.accept(LIMESTONE_BRICK_SLAB);
                 output.accept(LIMESTONE_BRICK_WALL);
+                output.accept(REINFORCED_GLASS);
+                output.accept(REINFORCED_GLASS_PANE);
 
             }).build()
     );

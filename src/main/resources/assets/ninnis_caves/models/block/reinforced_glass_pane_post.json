@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "textures": {
+    "edge": "ninnis_caves:block/reinforced_glass_pane_top",
+    "pane": "ninnis_caves:block/reinforced_glass"
+  }
+}

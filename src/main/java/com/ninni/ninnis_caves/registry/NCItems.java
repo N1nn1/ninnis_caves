@@ -24,6 +24,8 @@ public class NCItems {
     public static final Item LIMESTONE_BRICK_STAIRS = register("limestone_brick_stairs", new BlockItem(NCBlocks.LIMESTONE_BRICK_STAIRS, new FabricItemSettings()));
     public static final Item LIMESTONE_BRICK_SLAB = register("limestone_brick_slab", new BlockItem(NCBlocks.LIMESTONE_BRICK_SLAB, new FabricItemSettings()));
     public static final Item LIMESTONE_BRICK_WALL = register("limestone_brick_wall", new BlockItem(NCBlocks.LIMESTONE_BRICK_WALL, new FabricItemSettings()));
+    public static final Item REINFORCED_GLASS = register("reinforced_glass", new BlockItem(NCBlocks.REINFORCED_GLASS, new FabricItemSettings()));
+    public static final Item REINFORCED_GLASS_PANE = register("reinforced_glass_pane", new BlockItem(NCBlocks.REINFORCED_GLASS_PANE, new FabricItemSettings()));
 
     private static Item register(String id, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NinnisCaves.MOD_ID, id), item);
