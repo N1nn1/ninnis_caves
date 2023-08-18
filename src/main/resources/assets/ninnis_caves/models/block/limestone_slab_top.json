@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ninnis_caves:block/limestone",
+    "top": "ninnis_caves:block/limestone",
+    "side": "ninnis_caves:block/limestone"
+  }
+}

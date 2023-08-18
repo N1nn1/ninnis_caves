@@ -1,4 +1,4 @@
-package com.ninni.ninnis_caves.init;
+package com.ninni.ninnis_caves.registry;
 
 import com.ninni.ninnis_caves.NinnisCaves;
 import com.ninni.ninnis_caves.world.gen.features.StoneStripFeature;
@@ -9,12 +9,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 
-public class NinnisCavesFeatures {
+public class NCFeatures {
 
     public static final Feature<StoneStripConfig> STONE_STRIP = register("stone_strip", new StoneStripFeature(StoneStripConfig.CODEC));
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> F register(String name, F feature) {
-        return Registry.register(BuiltInRegistries.FEATURE, new ResourceLocation(NinnisCaves.MODID, name), feature);
+        return Registry.register(BuiltInRegistries.FEATURE, new ResourceLocation(NinnisCaves.MOD_ID, name), feature);
     }
 
 }

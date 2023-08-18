@@ -4,7 +4,7 @@
     "state": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:calcite"
+        "Name": "ninnis_caves:limestone"
       }
     }
   }

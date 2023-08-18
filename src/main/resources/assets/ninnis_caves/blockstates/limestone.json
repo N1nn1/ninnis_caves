@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ninnis_caves:block/limestone"
+      },
+      {
+        "model": "ninnis_caves:block/limestone_mirrored"
+      },
+      {
+        "model": "ninnis_caves:block/limestone",
+        "y": 180
+      },
+      {
+        "model": "ninnis_caves:block/limestone_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

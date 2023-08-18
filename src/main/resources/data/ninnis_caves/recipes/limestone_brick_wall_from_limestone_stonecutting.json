@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ninnis_caves:limestone"
+  },
+  "result": "ninnis_caves:limestone_brick_wall",
+  "count": 1
+}
