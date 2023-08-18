@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "ninnis_caves",
+	"version": "${version}",
+	"name": "Ninni's Caves",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Ninni",
+		"Orcinus"
+	],
+	"contact": {
+		"sources": "https://github.com/N1nn1/ninnis_caves"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ninnis_caves/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.ninni.ninnis_caves.NinnisCaves"
+		],
+		"client": [
+			"com.ninni.ninnis_caves.NinnisCavesClient"
+		]
+	},
+	"mixins": [
+		"ninnis_caves.mixins.json",
+		{
+			"config": "modid.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
