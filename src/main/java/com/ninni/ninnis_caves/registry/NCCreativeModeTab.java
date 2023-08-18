@@ -17,7 +17,13 @@ public class NCCreativeModeTab {
 
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(NINNIS_CAVES::getDefaultInstance).title(Component.translatable("ninnis_caves.item_group")).displayItems((featureFlagSet, output) -> {
 
-                //rhyolite blocks
+                //andesite blocks
+                output.accept(ANDESITE_SHINGLES);
+                output.accept(ANDESITE_SHINGLE_STAIRS);
+                output.accept(ANDESITE_SHINGLE_SLAB);
+                output.accept(ANDESITE_SHINGLE_WALL);
+
+                //limestone blocks
                 output.accept(LIMESTONE);
                 output.accept(LIMESTONE_STAIRS);
                 output.accept(LIMESTONE_SLAB);
@@ -47,6 +53,12 @@ public class NCCreativeModeTab {
                     LIMESTONE_BRICK_SLAB,
                     LIMESTONE_BRICK_WALL,
                     LIMESTONE_BRICKS
+            );
+            entries.addAfter(Items.POLISHED_ANDESITE_SLAB,
+                    ANDESITE_SHINGLES,
+                    ANDESITE_SHINGLE_STAIRS,
+                    ANDESITE_SHINGLE_SLAB,
+                    ANDESITE_SHINGLE_WALL
             );
         });
 

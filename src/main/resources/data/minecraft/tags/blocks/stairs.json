@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ninnis_caves:andesite_shingle_stairs",
     "ninnis_caves:limestone_stairs",
     "ninnis_caves:limestone_brick_stairs"
   ]

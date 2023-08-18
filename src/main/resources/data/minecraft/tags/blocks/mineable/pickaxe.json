@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "ninnis_caves:andesite_shingles",
+    "ninnis_caves:andesite_shingle_slab",
+    "ninnis_caves:andesite_shingle_stairs",
+    "ninnis_caves:andesite_shingle_wall",
     "ninnis_caves:limestone",
     "ninnis_caves:limestone_slab",
     "ninnis_caves:limestone_stairs",

@@ -10,6 +10,12 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class NCBlocks {
 
+    //andesite blocks
+    public static final Block ANDESITE_SHINGLES = register("andesite_shingles", new Block(BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
+    public static final Block ANDESITE_SHINGLE_STAIRS = register("andesite_shingle_stairs", new StairBlock(ANDESITE_SHINGLES.defaultBlockState(), BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
+    public static final Block ANDESITE_SHINGLE_SLAB = register("andesite_shingle_slab", new SlabBlock(BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
+    public static final Block ANDESITE_SHINGLE_WALL = register("andesite_shingle_wall", new WallBlock(BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
+
     //limestone blocks
     public static final Block LIMESTONE = register("limestone", new Block(BlockBehaviour.Properties.of().mapColor(DyeColor.YELLOW).requiresCorrectToolForDrops().strength(1F)));
     public static final Block LIMESTONE_STAIRS = register("limestone_stairs", new StairBlock(LIMESTONE.defaultBlockState(), BlockBehaviour.Properties.copy(LIMESTONE)));

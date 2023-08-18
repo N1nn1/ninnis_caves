@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ninnis_caves:andesite_shingles"
+  },
+  "result": "ninnis_caves:andesite_shingle_slab",
+  "count": 2
+}

@@ -3,6 +3,11 @@
 
   "item.ninnis_caves.ninnis_caves": "Ninni's Caves",
 
+  "block.ninnis_caves.andesite_shingles": "Andesite Shingles",
+  "block.ninnis_caves.andesite_shingle_wall": "Andesite Shingle Wall",
+  "block.ninnis_caves.andesite_shingle_slab": "Andesite Shingle Slab",
+  "block.ninnis_caves.andesite_shingle_stairs": "Andesite Shingle Stairs",
+
   "block.ninnis_caves.limestone": "Limestone",
   "block.ninnis_caves.limestone_wall": "Limestone Wall",
   "block.ninnis_caves.limestone_slab": "Limestone Slab",

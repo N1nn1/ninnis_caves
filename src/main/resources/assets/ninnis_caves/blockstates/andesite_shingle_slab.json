@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ninnis_caves:block/andesite_shingle_slab"
+    },
+    "type=double": {
+      "model": "ninnis_caves:block/andesite_shingles"
+    },
+    "type=top": {
+      "model": "ninnis_caves:block/andesite_shingle_slab_top"
+    }
+  }
+}

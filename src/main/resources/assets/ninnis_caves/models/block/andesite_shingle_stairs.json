@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ninnis_caves:block/andesite_shingles",
+    "top": "ninnis_caves:block/andesite_shingles",
+    "side": "ninnis_caves:block/andesite_shingles"
+  }
+}

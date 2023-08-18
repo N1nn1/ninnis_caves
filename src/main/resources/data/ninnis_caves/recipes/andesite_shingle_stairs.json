@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ninnis_caves:andesite_shingles"
+    }
+  },
+  "result": {
+    "item": "ninnis_caves:andesite_shingle_stairs",
+    "count": 4
+  }
+}
