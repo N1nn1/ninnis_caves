@@ -39,5 +39,9 @@ public class NinnisCaves implements ModInitializer {
 			biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_ANDESITE_LOWER);
 			biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_ANDESITE_UPPER);
 		});
+		BiomeModifications.create(new ResourceLocation(MOD_ID, "replace_gravel")).add(ModificationPhase.REPLACEMENTS, BiomeSelectors.foundInOverworld(), biomeModificationContext -> {
+			biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_GRAVEL);
+			biomeModificationContext.getGenerationSettings().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, NCPlacedFeatures.ORE_GRAVEL_UPPER);
+		});
 	}
 }

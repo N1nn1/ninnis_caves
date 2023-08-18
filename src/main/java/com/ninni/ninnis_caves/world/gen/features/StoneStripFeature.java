@@ -40,7 +40,7 @@ public class StoneStripFeature extends Feature<StoneStripConfig> {
                     double noise = fastNoise.GetNoise(mutableBlockPos.getX(), mutableBlockPos.getY(), mutableBlockPos.getZ());
                     if (noise > 0.95D) {
                         BlockState blockState = world.getBlockState(mutableBlockPos);
-                        boolean flag = !blockState.is(BlockTags.GEODE_INVALID_BLOCKS) && !blockState.isAir() && blockState.is(BlockTags.BASE_STONE_OVERWORLD) && !blockState.is(Blocks.DEEPSLATE);
+                        boolean flag = !blockState.is(BlockTags.GEODE_INVALID_BLOCKS) && !blockState.isAir() && blockState.is(BlockTags.BASE_STONE_OVERWORLD) && !(blockState.is(Blocks.DEEPSLATE) || blockState.is(Blocks.TUFF));
                         if (flag) {
                             world.setBlock(mutableBlockPos, featurePlaceContext.config().blockStateProvider().getState(randomSource, mutableBlockPos), 2);
                         }
