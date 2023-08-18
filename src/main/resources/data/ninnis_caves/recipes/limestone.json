@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:calcite"
+    },
+    "Q": {
+      "item": "minecraft:bone_meal"
+    }
+  },
+  "pattern": [
+    "CQ",
+    "QC"
+  ],
+  "result": {
+    "count": 2,
+    "item": "ninnis_caves:limestone"
+  },
+  "show_notification": true
+}

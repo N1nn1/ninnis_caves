@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "ninnis_caves:limestone",
+    "ninnis_caves:limestone_slab",
+    "ninnis_caves:limestone_stairs",
+    "ninnis_caves:limestone_wall",
+    "ninnis_caves:limestone_bricks",
+    "ninnis_caves:cracked_limestone_bricks",
+    "ninnis_caves:limestone_brick_slab",
+    "ninnis_caves:limestone_brick_stairs",
+    "ninnis_caves:limestone_brick_wall",
+    "ninnis_caves:reinforced_glass",
+    "ninnis_caves:reinforced_glass_pane"
+  ]
+}
