@@ -2,17 +2,15 @@ package com.ninni.ninnis_caves.world.gen.features;
 
 import com.mojang.serialization.Codec;
 import com.ninni.ninnis_caves.world.gen.FastNoise;
+import com.ninni.ninnis_caves.world.gen.features.config.StoneStripConfig;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.feature.DripstoneUtils;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import com.ninni.ninnis_caves.world.gen.features.config.StoneStripConfig;
 
 public class StoneStripFeature extends Feature<StoneStripConfig> {
 
@@ -30,22 +28,20 @@ public class StoneStripFeature extends Feature<StoneStripConfig> {
         fastNoise.SetFractalType(FastNoise.FractalType.RigidMulti);
         fastNoise.SetNoiseType(FastNoise.NoiseType.SimplexFractal);
         fastNoise.SetFractalOctaves(1);
-        fastNoise.SetFrequency(0.004F);
+        fastNoise.SetFrequency(0.015F);
+        fastNoise.SetFractalLacunarity(0.2F);
         int range = 16;
+        int yRange = range / 2;
         BlockPos.MutableBlockPos mutableBlockPos = new BlockPos.MutableBlockPos();
         for (int x = 0; x < range; x++) {
             for (int z = 0; z < range; z++) {
-                for (int y = 0; y < range; y++) {
+                for (int y = -yRange; y < yRange; y++) {
                     mutableBlockPos.set(blockPos.getX() + x, blockPos.getY() + y, blockPos.getZ() + z);
-                    float noise = fastNoise.GetNoise(mutableBlockPos.getX(), mutableBlockPos.getY(), mutableBlockPos.getZ());
-                    double threshold = 0.97655;
-                    if (noise > threshold) {
+                    double noise = fastNoise.GetNoise(mutableBlockPos.getX(), mutableBlockPos.getY(), mutableBlockPos.getZ());
+                    if (noise > 0.95D) {
                         BlockState blockState = world.getBlockState(mutableBlockPos);
-                        if (!blockState.is(BlockTags.BASE_STONE_OVERWORLD)) continue;
-                        for (Direction direction : Direction.values()) {
-                            if (!world.isStateAtPosition(mutableBlockPos.relative(direction), DripstoneUtils::isEmptyOrWaterOrLava)) {
-                                continue;
-                            }
+                        boolean flag = !blockState.is(BlockTags.GEODE_INVALID_BLOCKS) && !blockState.isAir() && blockState.is(BlockTags.BASE_STONE_OVERWORLD) && !blockState.is(Blocks.DEEPSLATE);
+                        if (flag) {
                             world.setBlock(mutableBlockPos, featurePlaceContext.config().blockStateProvider().getState(randomSource, mutableBlockPos), 2);
                         }
                     }
