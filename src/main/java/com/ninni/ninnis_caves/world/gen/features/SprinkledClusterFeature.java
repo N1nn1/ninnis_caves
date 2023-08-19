@@ -35,7 +35,7 @@ public class SprinkledClusterFeature extends Feature<SimpleBlockConfiguration> {
                     BlockPos blockPos2 = blockPos.offset(l, y, m);
                     int distance = Math.max(1, Math.round(Mth.sqrt((float) blockPos.distSqr(blockPos2))));
                     BlockState blockState = worldGenLevel.getBlockState(blockPos2);
-                    if (blockState.is(BlockTags.BASE_STONE_OVERWORLD) && !(blockState.is(Blocks.DEEPSLATE) || blockState.is(Blocks.TUFF))) {
+                    if (blockState.is(BlockTags.BASE_STONE_OVERWORLD) && !blockState.is(BlockTags.DEEPSLATE_ORE_REPLACEABLES)) {
                         if (distance > 5 && randomSource.nextInt(distance) > 0) {
                             continue;
                         }
