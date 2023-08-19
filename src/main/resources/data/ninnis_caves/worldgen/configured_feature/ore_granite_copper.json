@@ -12,6 +12,15 @@
           "block": "minecraft:granite",
           "predicate_type": "minecraft:block_match"
         }
+      },
+      {
+        "state": {
+          "Name": "ninnis_caves:granite_copper_ore"
+        },
+        "target": {
+          "block": "minecraft:copper_ore",
+          "predicate_type": "minecraft:block_match"
+        }
       }
     ]
   }

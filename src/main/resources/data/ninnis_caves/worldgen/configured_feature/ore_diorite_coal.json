@@ -12,6 +12,15 @@
           "block": "minecraft:diorite",
           "predicate_type": "minecraft:block_match"
         }
+      },
+      {
+        "state": {
+          "Name": "ninnis_caves:diorite_coal_ore"
+        },
+        "target": {
+          "block": "minecraft:coal_ore",
+          "predicate_type": "minecraft:block_match"
+        }
       }
     ]
   }
