@@ -23,6 +23,12 @@ public class NCCreativeModeTab {
                 output.accept(ANDESITE_SHINGLE_SLAB);
                 output.accept(ANDESITE_SHINGLE_WALL);
 
+                //granite blocks
+                output.accept(GRANITE_COPPER_ORE);
+
+                //diorite blocks
+                output.accept(DIORITE_COAL_ORE);
+
                 //limestone blocks
                 output.accept(LIMESTONE);
                 output.accept(LIMESTONE_STAIRS);
@@ -63,6 +69,9 @@ public class NCCreativeModeTab {
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(entries -> {
+
+            entries.addAfter(Items.COAL_ORE, DIORITE_COAL_ORE);
+            entries.addAfter(Items.COPPER_ORE, GRANITE_COPPER_ORE);
             entries.addBefore(Items.GRANITE, LIMESTONE);
         });
 
