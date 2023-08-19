@@ -4,9 +4,12 @@ import com.ninni.ninnis_caves.NinnisCaves;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 
 public class NCBlocks {
 
@@ -15,6 +18,12 @@ public class NCBlocks {
     public static final Block ANDESITE_SHINGLE_STAIRS = register("andesite_shingle_stairs", new StairBlock(ANDESITE_SHINGLES.defaultBlockState(), BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
     public static final Block ANDESITE_SHINGLE_SLAB = register("andesite_shingle_slab", new SlabBlock(BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
     public static final Block ANDESITE_SHINGLE_WALL = register("andesite_shingle_wall", new WallBlock(BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
+
+    //granite blocks
+    public static final Block GRANITE_COPPER_ORE = register("granite_copper_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.DIRT)));
+
+    //diorite blocks
+    public static final Block DIORITE_COAL_ORE = register("diorite_coal_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).mapColor(MapColor.QUARTZ), UniformInt.of(0, 2)));
 
     //limestone blocks
     public static final Block LIMESTONE = register("limestone", new Block(BlockBehaviour.Properties.of().mapColor(DyeColor.YELLOW).requiresCorrectToolForDrops().strength(1F)));

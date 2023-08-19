@@ -20,6 +20,12 @@ public class NCItems {
     public static final Item ANDESITE_SHINGLE_SLAB = register("andesite_shingle_slab", new BlockItem(NCBlocks.ANDESITE_SHINGLE_SLAB, new FabricItemSettings()));
     public static final Item ANDESITE_SHINGLE_WALL = register("andesite_shingle_wall", new BlockItem(NCBlocks.ANDESITE_SHINGLE_WALL, new FabricItemSettings()));
 
+    //granite blocks
+    public static final Item GRANITE_COPPER_ORE = register("granite_copper_ore", new BlockItem(NCBlocks.GRANITE_COPPER_ORE, new FabricItemSettings()));
+
+    //diorite blocks
+    public static final Item DIORITE_COAL_ORE = register("diorite_coal_ore", new BlockItem(NCBlocks.DIORITE_COAL_ORE, new FabricItemSettings()));
+
     //limestone blocks
     public static final Item LIMESTONE = register("limestone", new BlockItem(NCBlocks.LIMESTONE, new FabricItemSettings()));
     public static final Item LIMESTONE_STAIRS = register("limestone_stairs", new BlockItem(NCBlocks.LIMESTONE_STAIRS, new FabricItemSettings()));
