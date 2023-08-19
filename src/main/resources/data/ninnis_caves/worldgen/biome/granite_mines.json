@@ -65,7 +65,8 @@
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
       "ninnis_caves:granite_replace_stone",
-      "ninnis_caves:big_dirt_cluster"
+      "ninnis_caves:big_dirt_cluster",
+      "ninnis_caves:ore_granite_copper"
     ],
     [],
     [
