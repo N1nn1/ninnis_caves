@@ -1,5 +1,5 @@
 {
-  "type": "ninnis_caves:replace_stone",
+  "type": "ninnis_caves:sprinkled_cluster",
   "config": {
     "to_place": {
       "type": "minecraft:simple_state_provider",
