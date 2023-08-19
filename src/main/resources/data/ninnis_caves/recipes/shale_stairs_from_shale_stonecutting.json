@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ninnis_caves:shale"
+  },
+  "result": "ninnis_caves:shale_stairs",
+  "count": 1
+}

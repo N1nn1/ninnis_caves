@@ -26,7 +26,7 @@ public class NCBlocks {
     public static final Block DIORITE_COAL_ORE = register("diorite_coal_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).mapColor(MapColor.QUARTZ), UniformInt.of(0, 2)));
 
     //limestone blocks
-    public static final Block LIMESTONE = register("limestone", new Block(BlockBehaviour.Properties.of().mapColor(DyeColor.YELLOW).requiresCorrectToolForDrops().strength(1F)));
+    public static final Block LIMESTONE = register("limestone", new Block(BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1F)));
     public static final Block LIMESTONE_STAIRS = register("limestone_stairs", new StairBlock(LIMESTONE.defaultBlockState(), BlockBehaviour.Properties.copy(LIMESTONE)));
     public static final Block LIMESTONE_SLAB = register("limestone_slab", new SlabBlock(BlockBehaviour.Properties.copy(LIMESTONE)));
     public static final Block LIMESTONE_WALL = register("limestone_wall", new WallBlock(BlockBehaviour.Properties.copy(LIMESTONE)));
@@ -38,6 +38,17 @@ public class NCBlocks {
     public static final Block REINFORCED_GLASS = register("reinforced_glass", new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(3.0F, 1200.0F)));
     public static final Block REINFORCED_GLASS_PANE = register("reinforced_glass_pane", new IronBarsBlock(BlockBehaviour.Properties.copy(Blocks.GLASS_PANE).strength(3.0F, 1200.0F)));
 
+    //shale blocks
+    public static final Block SHALE = register("shale", new Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).strength(1.75F, 6.0F).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1F)));
+    public static final Block SHALE_STAIRS = register("shale_stairs", new StairBlock(SHALE.defaultBlockState(), BlockBehaviour.Properties.copy(SHALE)));
+    public static final Block SHALE_SLAB = register("shale_slab", new SlabBlock(BlockBehaviour.Properties.copy(SHALE)));
+    public static final Block SHALE_WALL = register("shale_wall", new WallBlock(BlockBehaviour.Properties.copy(SHALE)));
+
+    //gabbro blocks
+    public static final Block GABBRO = register("gabbro", new Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).strength(1.5F, 4.0F).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1F)));
+    public static final Block GABBRO_STAIRS = register("gabbro_stairs", new StairBlock(GABBRO.defaultBlockState(), BlockBehaviour.Properties.copy(GABBRO)));
+    public static final Block GABBRO_SLAB = register("gabbro_slab", new SlabBlock(BlockBehaviour.Properties.copy(GABBRO)));
+    public static final Block GABBRO_WALL = register("gabbro_wall", new WallBlock(BlockBehaviour.Properties.copy(GABBRO)));
 
     private static Block register(String id, Block block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(NinnisCaves.MOD_ID, id), block);

@@ -39,6 +39,18 @@ public class NCItems {
     public static final Item REINFORCED_GLASS = register("reinforced_glass", new BlockItem(NCBlocks.REINFORCED_GLASS, new FabricItemSettings()));
     public static final Item REINFORCED_GLASS_PANE = register("reinforced_glass_pane", new BlockItem(NCBlocks.REINFORCED_GLASS_PANE, new FabricItemSettings()));
 
+    //shale blocks
+    public static final Item SHALE = register("shale", new BlockItem(NCBlocks.SHALE, new FabricItemSettings()));
+    public static final Item SHALE_STAIRS = register("shale_stairs", new BlockItem(NCBlocks.SHALE_STAIRS, new FabricItemSettings()));
+    public static final Item SHALE_SLAB = register("shale_slab", new BlockItem(NCBlocks.SHALE_SLAB, new FabricItemSettings()));
+    public static final Item SHALE_WALL = register("shale_wall", new BlockItem(NCBlocks.SHALE_WALL, new FabricItemSettings()));
+
+    //gabbro blocks
+    public static final Item GABBRO = register("gabbro", new BlockItem(NCBlocks.GABBRO, new FabricItemSettings()));
+    public static final Item GABBRO_STAIRS = register("gabbro_stairs", new BlockItem(NCBlocks.GABBRO_STAIRS, new FabricItemSettings()));
+    public static final Item GABBRO_SLAB = register("gabbro_slab", new BlockItem(NCBlocks.GABBRO_SLAB, new FabricItemSettings()));
+    public static final Item GABBRO_WALL = register("gabbro_wall", new BlockItem(NCBlocks.GABBRO_WALL, new FabricItemSettings()));
+
     private static Item register(String id, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NinnisCaves.MOD_ID, id), item);
     }

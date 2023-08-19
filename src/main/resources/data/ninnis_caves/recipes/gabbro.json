@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:granite"
+    },
+    "Q": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "CQ",
+    "QC"
+  ],
+  "result": {
+    "count": 2,
+    "item": "ninnis_caves:gabbro"
+  },
+  "show_notification": true
+}

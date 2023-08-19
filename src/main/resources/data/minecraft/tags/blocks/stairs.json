@@ -3,6 +3,8 @@
   "values": [
     "ninnis_caves:andesite_shingle_stairs",
     "ninnis_caves:limestone_stairs",
-    "ninnis_caves:limestone_brick_stairs"
+    "ninnis_caves:limestone_brick_stairs",
+    "ninnis_caves:shale_stairs",
+    "ninnis_caves:gabbro_stairs"
   ]
 }

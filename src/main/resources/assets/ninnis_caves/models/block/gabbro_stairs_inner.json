@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ninnis_caves:block/gabbro",
+    "top": "ninnis_caves:block/gabbro",
+    "side": "ninnis_caves:block/gabbro"
+  }
+}

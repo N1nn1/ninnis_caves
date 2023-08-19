@@ -22,5 +22,15 @@
   "block.ninnis_caves.limestone_brick_slab": "Limestone Brick Slab",
   "block.ninnis_caves.limestone_brick_stairs": "Limestone Brick Stairs",
   "block.ninnis_caves.reinforced_glass": "Reinforced Glass",
-  "block.ninnis_caves.reinforced_glass_pane": "Reinforced Glass Pane"
+  "block.ninnis_caves.reinforced_glass_pane": "Reinforced Glass Pane",
+
+  "block.ninnis_caves.shale": "Shale",
+  "block.ninnis_caves.shale_wall": "Shale Wall",
+  "block.ninnis_caves.shale_slab": "Shale Slab",
+  "block.ninnis_caves.shale_stairs": "Shale Stairs",
+
+  "block.ninnis_caves.gabbro": "Gabbro",
+  "block.ninnis_caves.gabbro_wall": "Gabbro Wall",
+  "block.ninnis_caves.gabbro_slab": "Gabbro Slab",
+  "block.ninnis_caves.gabbro_stairs": "Gabbro Stairs"
 }

@@ -3,6 +3,8 @@
   "values": [
     "ninnis_caves:andesite_shingle_wall",
     "ninnis_caves:limestone_wall",
-    "ninnis_caves:limestone_brick_wall"
+    "ninnis_caves:limestone_brick_wall",
+    "ninnis_caves:shale_wall",
+    "ninnis_caves:gabbro_wall"
   ]
 }

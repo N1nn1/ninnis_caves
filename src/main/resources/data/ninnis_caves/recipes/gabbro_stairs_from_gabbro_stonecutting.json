@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ninnis_caves:gabbro"
+  },
+  "result": "ninnis_caves:gabbro_stairs",
+  "count": 1
+}

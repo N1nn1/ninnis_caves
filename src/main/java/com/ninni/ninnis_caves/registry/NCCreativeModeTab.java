@@ -42,6 +42,19 @@ public class NCCreativeModeTab {
                 output.accept(REINFORCED_GLASS);
                 output.accept(REINFORCED_GLASS_PANE);
 
+                //shale blocks
+                output.accept(SHALE);
+                output.accept(SHALE_STAIRS);
+                output.accept(SHALE_SLAB);
+                output.accept(SHALE_WALL);
+
+                //gabbro blocks
+                output.accept(GABBRO);
+                output.accept(GABBRO_STAIRS);
+                output.accept(GABBRO_SLAB);
+                output.accept(GABBRO_WALL);
+
+
             }).build()
     );
 

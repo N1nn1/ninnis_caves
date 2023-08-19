@@ -17,6 +17,14 @@
     "ninnis_caves:limestone_brick_stairs",
     "ninnis_caves:limestone_brick_wall",
     "ninnis_caves:reinforced_glass",
-    "ninnis_caves:reinforced_glass_pane"
+    "ninnis_caves:reinforced_glass_pane",
+    "ninnis_caves:shale",
+    "ninnis_caves:shale_slab",
+    "ninnis_caves:shale_stairs",
+    "ninnis_caves:shale_wall",
+    "ninnis_caves:gabbro",
+    "ninnis_caves:gabbro_slab",
+    "ninnis_caves:gabbro_stairs",
+    "ninnis_caves:gabbro_wall"
   ]
 }
