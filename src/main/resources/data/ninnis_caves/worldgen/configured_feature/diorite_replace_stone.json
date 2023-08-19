@@ -1,0 +1,11 @@
+{
+  "type": "ninnis_caves:replace_stone",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:diorite"
+      }
+    }
+  }
+}

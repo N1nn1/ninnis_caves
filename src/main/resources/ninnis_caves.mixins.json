@@ -1,9 +1,11 @@
 {
-	"required": true,
-	"package": "com.ninni.ninnis_caves.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "com.ninni.ninnis_caves.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "OverworldBiomeBuilderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
