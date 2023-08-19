@@ -22,8 +22,8 @@ public class OverworldBiomeBuilderMixin {
 
     @Inject(at = @At("RETURN"), method = "addUndergroundBiomes")
     private void NC$addUndergroundBiomes(Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> consumer, CallbackInfo ci) {
-        consumer.accept(Pair.of(Climate.parameters(this.FULL_RANGE, this.FULL_RANGE, Climate.Parameter.span(0.1F, 0.25F), this.FULL_RANGE, Climate.Parameter.point(0.05F), this.FULL_RANGE, 0.0F), NCBiomes.GRANITE_MINES));
-        consumer.accept(Pair.of(Climate.parameters(this.FULL_RANGE, this.FULL_RANGE, Climate.Parameter.span(0.4F, 0.55F), this.FULL_RANGE, Climate.Parameter.point(0.05F), this.FULL_RANGE, 0.0F), NCBiomes.DIORITE_MINES));
+        consumer.accept(Pair.of(Climate.parameters(this.FULL_RANGE, this.FULL_RANGE, Climate.Parameter.span(0.1F, 0.225F), this.FULL_RANGE, Climate.Parameter.point(0.05F), this.FULL_RANGE, 0.0F), NCBiomes.GRANITE_MINES));
+        consumer.accept(Pair.of(Climate.parameters(this.FULL_RANGE, this.FULL_RANGE, Climate.Parameter.span(0.3F, 0.425F), this.FULL_RANGE, Climate.Parameter.point(0.05F), this.FULL_RANGE, 0.0F), NCBiomes.DIORITE_MINES));
     }
 
 }
