@@ -13,6 +13,8 @@ import net.minecraft.util.datafix.fixes.ObjectiveRenderTypeFix;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 
+import java.util.function.Predicate;
+
 public class NCVanillaIntegration {
 
     public static void serverInit() {
@@ -27,18 +29,16 @@ public class NCVanillaIntegration {
     private static void registerBiomeModifications() {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.LIMESTONE_STRIP);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.BIG_ANDESITE_CLUSTER);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.LUSH_CAVES), GenerationStep.Decoration.UNDERGROUND_ORES, OrePlacements.ORE_DIORITE_LOWER);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.LUSH_CAVES), GenerationStep.Decoration.UNDERGROUND_ORES, OrePlacements.ORE_DIORITE_UPPER);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.DRIPSTONE_CAVES), GenerationStep.Decoration.UNDERGROUND_ORES, OrePlacements.ORE_GRANITE_LOWER);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.DRIPSTONE_CAVES), GenerationStep.Decoration.UNDERGROUND_ORES, OrePlacements.ORE_GRANITE_UPPER);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.BIG_GABBRO_CLUSTER);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.BIG_SHALE_CLUSTER);
         BiomeModifications.create(new ResourceLocation(NinnisCaves.MOD_ID, "remove_dirt")).add(ModificationPhase.REMOVALS, BiomeSelectors.foundInOverworld(), (biomeModificationContext) -> {
             biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_DIRT);
         });
-        BiomeModifications.create(new ResourceLocation(NinnisCaves.MOD_ID, "remove_diorite")).add(ModificationPhase.REMOVALS, BiomeSelectors.foundInOverworld(), (biomeModificationContext) -> {
-            biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_DIORITE_LOWER);
-            biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_DIORITE_UPPER);
+        BiomeModifications.create(new ResourceLocation(NinnisCaves.MOD_ID, "remove_diorite")).add(ModificationPhase.REMOVALS, BiomeSelectors.tag(BiomeTags.IS_OVERWORLD).and(Predicate.not(BiomeSelectors.tag(NCBiomeTags.RETAIN_DIORITE))), (biomeModificationContext) -> {
+            biomeModificationContext.getGenerationSettings().removeFeature(GenerationStep.Decoration.UNDERGROUND_ORES, OrePlacements.ORE_DIORITE_LOWER);
+            biomeModificationContext.getGenerationSettings().removeFeature(GenerationStep.Decoration.UNDERGROUND_ORES, OrePlacements.ORE_DIORITE_UPPER);
         });
-        BiomeModifications.create(new ResourceLocation(NinnisCaves.MOD_ID, "remove_granite")).add(ModificationPhase.REMOVALS, BiomeSelectors.foundInOverworld(), (biomeModificationContext) -> {
+        BiomeModifications.create(new ResourceLocation(NinnisCaves.MOD_ID, "remove_granite")).add(ModificationPhase.REMOVALS, BiomeSelectors.tag(BiomeTags.IS_OVERWORLD).and(Predicate.not(BiomeSelectors.tag(NCBiomeTags.RETAIN_GRANITE))), (biomeModificationContext) -> {
             biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_GRANITE_LOWER);
             biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_GRANITE_UPPER);
         });
