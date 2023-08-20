@@ -18,6 +18,7 @@ public class NCCreativeModeTab {
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(NINNIS_CAVES::getDefaultInstance).title(Component.translatable("ninnis_caves.item_group")).displayItems((featureFlagSet, output) -> {
 
                 //andesite blocks
+                output.accept(ANDESITE_PEDISTAL);
                 output.accept(ANDESITE_SHINGLES);
                 output.accept(ANDESITE_SHINGLE_STAIRS);
                 output.accept(ANDESITE_SHINGLE_SLAB);

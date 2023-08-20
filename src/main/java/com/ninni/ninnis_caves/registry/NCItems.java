@@ -16,6 +16,7 @@ public class NCItems {
 
     //andesite blocks
     public static final Item ANDESITE_SHINGLES = register("andesite_shingles", new BlockItem(NCBlocks.ANDESITE_SHINGLES, new FabricItemSettings()));
+    public static final Item ANDESITE_PEDISTAL = register("andesite_pedistal", new BlockItem(NCBlocks.ANDESITE_PEDISTAL, new FabricItemSettings()));
     public static final Item ANDESITE_SHINGLE_STAIRS = register("andesite_shingle_stairs", new BlockItem(NCBlocks.ANDESITE_SHINGLE_STAIRS, new FabricItemSettings()));
     public static final Item ANDESITE_SHINGLE_SLAB = register("andesite_shingle_slab", new BlockItem(NCBlocks.ANDESITE_SHINGLE_SLAB, new FabricItemSettings()));
     public static final Item ANDESITE_SHINGLE_WALL = register("andesite_shingle_wall", new BlockItem(NCBlocks.ANDESITE_SHINGLE_WALL, new FabricItemSettings()));

@@ -1,10 +1,12 @@
 package com.ninni.ninnis_caves.registry;
 
 import com.ninni.ninnis_caves.NinnisCaves;
+import com.ninni.ninnis_caves.client.renderer.block.entity.AndesitePedistalBlockEntityRenderer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.data.worldgen.placement.OrePlacements;
 import net.minecraft.resources.ResourceLocation;
@@ -22,6 +24,7 @@ public class NCVanillaIntegration {
     }
 
     public static void clientInit() {
+        registerBlockEntityRenderer();
         registerBlockRenderLayers();
     }
 
@@ -58,5 +61,10 @@ public class NCVanillaIntegration {
                 NCBlocks.REINFORCED_GLASS,
                 NCBlocks.REINFORCED_GLASS_PANE
         );
+    }
+
+    @SuppressWarnings("deprecation")
+    private static void registerBlockEntityRenderer() {
+        BlockEntityRendererRegistry.register(NCBlockEntityTypes.ANDESITE_PEDISTAL, AndesitePedistalBlockEntityRenderer::new);
     }
 }
