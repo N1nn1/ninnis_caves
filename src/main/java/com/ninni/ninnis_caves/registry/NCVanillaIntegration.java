@@ -29,8 +29,8 @@ public class NCVanillaIntegration {
     private static void registerBiomeModifications() {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.LIMESTONE_STRIP);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.BIG_ANDESITE_CLUSTER);
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.BIG_GABBRO_CLUSTER);
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.BIG_SHALE_CLUSTER);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.SHALE_STRIP);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.LOCAL_MODIFICATIONS, NCPlacedFeatures.GABBRO_DELTA);
         BiomeModifications.create(new ResourceLocation(NinnisCaves.MOD_ID, "remove_dirt")).add(ModificationPhase.REMOVALS, BiomeSelectors.foundInOverworld(), (biomeModificationContext) -> {
             biomeModificationContext.getGenerationSettings().removeFeature(OrePlacements.ORE_DIRT);
         });
