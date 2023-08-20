@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ninnis_caves:granite_tiles"
+    }
+  },
+  "result": {
+    "item": "ninnis_caves:granite_tile_stairs",
+    "count": 4
+  }
+}

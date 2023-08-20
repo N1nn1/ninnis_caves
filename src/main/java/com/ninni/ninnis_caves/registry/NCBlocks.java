@@ -21,6 +21,10 @@ public class NCBlocks {
 
     //granite blocks
     public static final Block GRANITE_COPPER_ORE = register("granite_copper_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.DIRT)));
+    public static final Block GRANITE_TILES = register("granite_tiles", new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
+    public static final Block GRANITE_TILE_STAIRS = register("granite_tile_stairs", new StairBlock(GRANITE_TILES.defaultBlockState(), BlockBehaviour.Properties.copy(GRANITE_TILES)));
+    public static final Block GRANITE_TILE_SLAB = register("granite_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(GRANITE_TILES)));
+    public static final Block GRANITE_TILE_WALL = register("granite_tile_wall", new WallBlock(BlockBehaviour.Properties.copy(GRANITE_TILES)));
 
     //diorite blocks
     public static final Block DIORITE_COAL_ORE = register("diorite_coal_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).mapColor(MapColor.QUARTZ), UniformInt.of(0, 2)));

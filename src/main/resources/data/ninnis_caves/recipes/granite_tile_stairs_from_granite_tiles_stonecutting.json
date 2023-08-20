@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ninnis_caves:granite_tiles"
+  },
+  "result": "ninnis_caves:granite_tile_stairs",
+  "count": 1
+}

@@ -25,6 +25,10 @@ public class NCCreativeModeTab {
 
                 //granite blocks
                 output.accept(GRANITE_COPPER_ORE);
+                output.accept(GRANITE_TILES);
+                output.accept(GRANITE_TILE_STAIRS);
+                output.accept(GRANITE_TILE_SLAB);
+                output.accept(GRANITE_TILE_WALL);
 
                 //diorite blocks
                 output.accept(DIORITE_COAL_ORE);
@@ -78,6 +82,12 @@ public class NCCreativeModeTab {
                     ANDESITE_SHINGLE_STAIRS,
                     ANDESITE_SHINGLE_SLAB,
                     ANDESITE_SHINGLE_WALL
+            );
+            entries.addAfter(Items.POLISHED_GRANITE_SLAB,
+                    GRANITE_TILES,
+                    GRANITE_TILE_STAIRS,
+                    GRANITE_TILE_SLAB,
+                    GRANITE_TILE_WALL
             );
         });
 
