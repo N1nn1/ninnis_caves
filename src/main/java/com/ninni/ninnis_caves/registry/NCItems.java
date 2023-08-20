@@ -30,6 +30,8 @@ public class NCItems {
 
     //diorite blocks
     public static final Item DIORITE_COAL_ORE = register("diorite_coal_ore", new BlockItem(NCBlocks.DIORITE_COAL_ORE, new FabricItemSettings()));
+    public static final Item ORNATE_DIORITE = register("ornate_diorite", new BlockItem(NCBlocks.ORNATE_DIORITE, new FabricItemSettings()));
+    public static final Item ORNATE_DIORITE_PILLAR = register("ornate_diorite_pillar", new BlockItem(NCBlocks.ORNATE_DIORITE_PILLAR, new FabricItemSettings()));
 
     //limestone blocks
     public static final Item LIMESTONE = register("limestone", new BlockItem(NCBlocks.LIMESTONE, new FabricItemSettings()));

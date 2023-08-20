@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ninnis_caves:block/ornate_diorite_pillar_top",
+    "side": "ninnis_caves:block/ornate_diorite_pillar"
+  }
+}

@@ -30,6 +30,8 @@ public class NCBlocks {
 
     //diorite blocks
     public static final Block DIORITE_COAL_ORE = register("diorite_coal_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).mapColor(MapColor.QUARTZ), UniformInt.of(0, 2)));
+    public static final Block ORNATE_DIORITE = register("ornate_diorite", new GlazedTerracottaBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)));
+    public static final Block ORNATE_DIORITE_PILLAR = register("ornate_diorite_pillar", new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)));
 
     //limestone blocks
     public static final Block LIMESTONE = register("limestone", new Block(BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1F)));

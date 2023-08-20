@@ -33,6 +33,8 @@ public class NCCreativeModeTab {
 
                 //diorite blocks
                 output.accept(DIORITE_COAL_ORE);
+                output.accept(ORNATE_DIORITE);
+                output.accept(ORNATE_DIORITE_PILLAR);
 
                 //limestone blocks
                 output.accept(LIMESTONE);
@@ -90,6 +92,10 @@ public class NCCreativeModeTab {
                     GRANITE_TILE_SLAB,
                     GRANITE_TILE_WALL
             );
+            entries.addAfter(Items.POLISHED_DIORITE_SLAB,
+                    ORNATE_DIORITE,
+                    ORNATE_DIORITE_PILLAR
+            );
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(entries -> {
@@ -105,7 +111,12 @@ public class NCCreativeModeTab {
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> {
+            entries.addBefore(Items.ITEM_FRAME, ANDESITE_PEDISTAL);
             entries.addBefore(Items.TINTED_GLASS, REINFORCED_GLASS, REINFORCED_GLASS_PANE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(entries -> {
+            entries.addBefore(Items.OBSERVER, ANDESITE_PEDISTAL);
         });
     }
 
