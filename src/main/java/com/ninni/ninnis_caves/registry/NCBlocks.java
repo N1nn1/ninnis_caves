@@ -50,12 +50,18 @@ public class NCBlocks {
     public static final Block SHALE_STAIRS = register("shale_stairs", new StairBlock(SHALE.defaultBlockState(), BlockBehaviour.Properties.copy(SHALE)));
     public static final Block SHALE_SLAB = register("shale_slab", new SlabBlock(BlockBehaviour.Properties.copy(SHALE)));
     public static final Block SHALE_WALL = register("shale_wall", new WallBlock(BlockBehaviour.Properties.copy(SHALE)));
+    public static final Block REFINED_SHALE = register("refined_shale", new Block(BlockBehaviour.Properties.copy(SHALE)));
+    public static final Block REFINED_SHALE_STAIRS = register("refined_shale_stairs", new StairBlock(REFINED_SHALE.defaultBlockState(), BlockBehaviour.Properties.copy(REFINED_SHALE)));
+    public static final Block REFINED_SHALE_SLAB = register("refined_shale_slab", new SlabBlock(BlockBehaviour.Properties.copy(REFINED_SHALE)));
 
     //gabbro blocks
     public static final Block GABBRO = register("gabbro", new Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).strength(1.5F, 4.0F).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1F)));
     public static final Block GABBRO_STAIRS = register("gabbro_stairs", new StairBlock(GABBRO.defaultBlockState(), BlockBehaviour.Properties.copy(GABBRO)));
     public static final Block GABBRO_SLAB = register("gabbro_slab", new SlabBlock(BlockBehaviour.Properties.copy(GABBRO)));
     public static final Block GABBRO_WALL = register("gabbro_wall", new WallBlock(BlockBehaviour.Properties.copy(GABBRO)));
+    public static final Block REFINED_GABBRO = register("refined_gabbro", new Block(BlockBehaviour.Properties.copy(GABBRO)));
+    public static final Block REFINED_GABBRO_STAIRS = register("refined_gabbro_stairs", new StairBlock(REFINED_GABBRO.defaultBlockState(), BlockBehaviour.Properties.copy(REFINED_GABBRO)));
+    public static final Block REFINED_GABBRO_SLAB = register("refined_gabbro_slab", new SlabBlock(BlockBehaviour.Properties.copy(REFINED_GABBRO)));
 
     private static Block register(String id, Block block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(NinnisCaves.MOD_ID, id), block);

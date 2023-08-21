@@ -6,6 +6,8 @@
     "ninnis_caves:limestone_slab",
     "ninnis_caves:limestone_brick_slab",
     "ninnis_caves:shale_slab",
-    "ninnis_caves:gabbro_slab"
+    "ninnis_caves:refined_shale_slab",
+    "ninnis_caves:gabbro_slab",
+    "ninnis_caves:refined_gabbro_slab"
   ]
 }

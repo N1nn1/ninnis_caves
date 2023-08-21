@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ninnis_caves:refined_gabbro"
+    }
+  },
+  "result": {
+    "item": "ninnis_caves:refined_gabbro_stairs",
+    "count": 4
+  }
+}

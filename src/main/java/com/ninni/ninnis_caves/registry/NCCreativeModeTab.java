@@ -54,12 +54,18 @@ public class NCCreativeModeTab {
                 output.accept(SHALE_STAIRS);
                 output.accept(SHALE_SLAB);
                 output.accept(SHALE_WALL);
+                output.accept(REFINED_SHALE);
+                output.accept(REFINED_SHALE_STAIRS);
+                output.accept(REFINED_SHALE_SLAB);
 
                 //gabbro blocks
                 output.accept(GABBRO);
                 output.accept(GABBRO_STAIRS);
                 output.accept(GABBRO_SLAB);
                 output.accept(GABBRO_WALL);
+                output.accept(REFINED_GABBRO);
+                output.accept(REFINED_GABBRO_STAIRS);
+                output.accept(REFINED_GABBRO_SLAB);
 
 
             }).build()
@@ -95,6 +101,22 @@ public class NCCreativeModeTab {
             entries.addAfter(Items.POLISHED_DIORITE_SLAB,
                     ORNATE_DIORITE,
                     ORNATE_DIORITE_PILLAR
+            );
+            entries.addBefore(Items.REINFORCED_DEEPSLATE,
+                    GABBRO,
+                    GABBRO_STAIRS,
+                    GABBRO_SLAB,
+                    GABBRO_WALL,
+                    REFINED_GABBRO,
+                    REFINED_GABBRO_STAIRS,
+                    REFINED_GABBRO_SLAB,
+                    SHALE,
+                    SHALE_STAIRS,
+                    SHALE_SLAB,
+                    SHALE_WALL,
+                    REFINED_SHALE,
+                    REFINED_SHALE_STAIRS,
+                    REFINED_SHALE_SLAB
             );
         });
 

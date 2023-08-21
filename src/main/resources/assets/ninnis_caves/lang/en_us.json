@@ -36,9 +36,17 @@
   "block.ninnis_caves.shale_wall": "Shale Wall",
   "block.ninnis_caves.shale_slab": "Shale Slab",
   "block.ninnis_caves.shale_stairs": "Shale Stairs",
+  "block.ninnis_caves.refined_shale": "Refined Shale",
+  "block.ninnis_caves.refined_shale_wall": "Refined Shale Wall",
+  "block.ninnis_caves.refined_shale_slab": "Refined Shale Slab",
+  "block.ninnis_caves.refined_shale_stairs": "Refined Shale Stairs",
 
   "block.ninnis_caves.gabbro": "Gabbro",
   "block.ninnis_caves.gabbro_wall": "Gabbro Wall",
   "block.ninnis_caves.gabbro_slab": "Gabbro Slab",
-  "block.ninnis_caves.gabbro_stairs": "Gabbro Stairs"
+  "block.ninnis_caves.gabbro_stairs": "Gabbro Stairs",
+  "block.ninnis_caves.refined_gabbro": "Refined Gabbro",
+  "block.ninnis_caves.refined_gabbro_wall": "Refined Gabbro Wall",
+  "block.ninnis_caves.refined_gabbro_slab": "Refined Gabbro Slab",
+  "block.ninnis_caves.refined_gabbro_stairs": "Refined Gabbro Stairs"
 }
