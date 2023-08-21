@@ -1,9 +1,9 @@
 {
 	"parent": "minecraft:block/cube",
 	"textures": {
-		"top": "ninnis_caves:block/andesite_pedistal_top",
-		"side": "ninnis_caves:block/andesite_pedistal",
-		"bottom": "ninnis_caves:block/andesite_pedistal_bottom",
+		"top": "ninnis_caves:block/andesite_pedestal_top",
+		"side": "ninnis_caves:block/andesite_pedestal",
+		"bottom": "ninnis_caves:block/andesite_pedestal_bottom",
 		"particle": "#bottom"
 	},
 	"elements": [

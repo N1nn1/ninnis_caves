@@ -2,7 +2,7 @@ package com.ninni.ninnis_caves.client.renderer.block.entity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.ninni.ninnis_caves.block.entity.AndesitePedistalBlockEntity;
+import com.ninni.ninnis_caves.block.entity.AndesitePedestalBlockEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -16,7 +16,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 @Environment(value= EnvType.CLIENT)
-public class AndesitePedistalBlockEntityRenderer implements BlockEntityRenderer<AndesitePedistalBlockEntity> {
+public class AndesitePedistalBlockEntityRenderer implements BlockEntityRenderer<AndesitePedestalBlockEntity> {
     private final ItemRenderer itemRenderer;
 
     public AndesitePedistalBlockEntityRenderer(BlockEntityRendererProvider.Context ctx) {
@@ -24,7 +24,7 @@ public class AndesitePedistalBlockEntityRenderer implements BlockEntityRenderer<
     }
 
     @Override
-    public void render(AndesitePedistalBlockEntity entity, float f, PoseStack poseStack, MultiBufferSource multiBufferSource, int light, int overlay) {
+    public void render(AndesitePedestalBlockEntity entity, float f, PoseStack poseStack, MultiBufferSource multiBufferSource, int light, int overlay) {
         Direction direction = entity.getBlockState().getValue(BlockStateProperties.HORIZONTAL_FACING);
         NonNullList<ItemStack> defaultedList = entity.getItemsDisplayed();
         for (int l = 0; l < defaultedList.size(); ++l) {

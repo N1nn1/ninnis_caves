@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "ninnis_caves:andesite_pedistal_from_andesite_stonecutting"
+      "ninnis_caves:andesite_pedestal"
     ]
   },
   "criteria": {
@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "minecraft:andesite"
+              "minecraft:polished_andesite"
             ]
           }
         ]
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "ninnis_caves:andesite_pedistal_from_andesite_stonecutting"
+        "recipe": "ninnis_caves:andesite_pedestal"
       }
     }
   },

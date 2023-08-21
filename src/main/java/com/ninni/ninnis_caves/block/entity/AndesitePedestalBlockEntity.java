@@ -16,14 +16,14 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import org.jetbrains.annotations.Nullable;
 
-public class AndesitePedistalBlockEntity extends BlockEntity implements Clearable {
+public class AndesitePedestalBlockEntity extends BlockEntity implements Clearable {
     private final NonNullList<ItemStack> itemsDisplayed = NonNullList.withSize(1, ItemStack.EMPTY);
 
-    public AndesitePedistalBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
+    public AndesitePedestalBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
     }
 
-    public AndesitePedistalBlockEntity(BlockPos pos, BlockState state) {
+    public AndesitePedestalBlockEntity(BlockPos pos, BlockState state) {
         this(NCBlockEntityTypes.ANDESITE_PEDISTAL, pos, state);
     }
 

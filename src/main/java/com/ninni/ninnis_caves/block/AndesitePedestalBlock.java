@@ -1,6 +1,6 @@
 package com.ninni.ninnis_caves.block;
 
-import com.ninni.ninnis_caves.block.entity.AndesitePedistalBlockEntity;
+import com.ninni.ninnis_caves.block.entity.AndesitePedestalBlockEntity;
 import com.ninni.ninnis_caves.registry.NCStats;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -32,12 +32,12 @@ import org.jetbrains.annotations.Nullable;
 
 //TODO make it emit redstone when an item is taken out
 @SuppressWarnings("deprecation")
-public class AndesitePedistalBlock extends BaseEntityBlock implements SimpleWaterloggedBlock {
+public class AndesitePedestalBlock extends BaseEntityBlock implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     protected static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 12, 13);
 
-    public AndesitePedistalBlock(Properties settings) {
+    public AndesitePedestalBlock(Properties settings) {
         super(settings);
         this.registerDefaultState(this.defaultBlockState().setValue(WATERLOGGED, false).setValue(FACING, Direction.NORTH));
     }
@@ -47,17 +47,20 @@ public class AndesitePedistalBlock extends BaseEntityBlock implements SimpleWate
         BlockEntity blockEntity = level.getBlockEntity(blockPos);
         ItemStack stackInHand = player.getItemInHand(hand);
 
-        if (blockEntity instanceof AndesitePedistalBlockEntity pedistal) {
+        if (blockEntity instanceof AndesitePedestalBlockEntity pedistal) {
             if (!level.isClientSide && stackInHand.getItem() instanceof TieredItem && !stackInHand.isEmpty() && pedistal.addItem(player, player.getAbilities().instabuild ? stackInHand.copy() : stackInHand) ) {
                 player.awardStat(NCStats.INTERACT_WITH_PEDISTAL);
                 level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 1, 1);
                 return InteractionResult.SUCCESS;
             }
             if (stackInHand.isEmpty() && !pedistal.getItemsDisplayed().get(0).is(ItemStack.EMPTY.getItem())) {
-                player.setItemInHand(hand, pedistal.getItemsDisplayed().get(0));
-                pedistal.clearContent();
-                player.awardStat(NCStats.INTERACT_WITH_PEDISTAL);
-                level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1, 1);
+                if (!level.isClientSide) {
+                    player.setItemInHand(hand, pedistal.getItemsDisplayed().get(0));
+                    player.awardStat(NCStats.INTERACT_WITH_PEDISTAL);
+                    level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1, 1);
+                }
+                //TODO this doesn't update in a server
+                pedistal.getItemsDisplayed().set(0, ItemStack.EMPTY);
                 return InteractionResult.SUCCESS;
             }
             return InteractionResult.CONSUME;
@@ -71,8 +74,8 @@ public class AndesitePedistalBlock extends BaseEntityBlock implements SimpleWate
         if (state.is(newState.getBlock())) return;
 
         BlockEntity blockEntity = world.getBlockEntity(blockPos);
-        if (blockEntity instanceof AndesitePedistalBlockEntity) {
-            Containers.dropContents(world, blockPos, ((AndesitePedistalBlockEntity)blockEntity).getItemsDisplayed());
+        if (blockEntity instanceof AndesitePedestalBlockEntity) {
+            Containers.dropContents(world, blockPos, ((AndesitePedestalBlockEntity)blockEntity).getItemsDisplayed());
         }
 
         super.onRemove(state, world, blockPos, newState, moved);
@@ -91,7 +94,7 @@ public class AndesitePedistalBlock extends BaseEntityBlock implements SimpleWate
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new AndesitePedistalBlockEntity(blockPos, blockState);
+        return new AndesitePedestalBlockEntity(blockPos, blockState);
     }
 
     @Override
