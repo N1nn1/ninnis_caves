@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ninnis_caves:refined_gabbro"
+  },
+  "result": "ninnis_caves:refined_gabbro_tiles",
+  "count": 1
+}

@@ -40,6 +40,10 @@
   "block.ninnis_caves.refined_shale_wall": "Refined Shale Wall",
   "block.ninnis_caves.refined_shale_slab": "Refined Shale Slab",
   "block.ninnis_caves.refined_shale_stairs": "Refined Shale Stairs",
+  "block.ninnis_caves.refined_shale_tiles": "Refined Shale Tiles",
+  "block.ninnis_caves.refined_shale_tile_wall": "Refined Shale Tile Wall",
+  "block.ninnis_caves.refined_shale_tile_slab": "Refined Shale Tile Slab",
+  "block.ninnis_caves.refined_shale_tile_stairs": "Refined Shale Tile Stairs",
 
   "block.ninnis_caves.gabbro": "Gabbro",
   "block.ninnis_caves.gabbro_wall": "Gabbro Wall",
@@ -48,5 +52,9 @@
   "block.ninnis_caves.refined_gabbro": "Refined Gabbro",
   "block.ninnis_caves.refined_gabbro_wall": "Refined Gabbro Wall",
   "block.ninnis_caves.refined_gabbro_slab": "Refined Gabbro Slab",
-  "block.ninnis_caves.refined_gabbro_stairs": "Refined Gabbro Stairs"
+  "block.ninnis_caves.refined_gabbro_stairs": "Refined Gabbro Stairs",
+  "block.ninnis_caves.refined_gabbro_tiles": "Refined Gabbro Tiles",
+  "block.ninnis_caves.refined_gabbro_tile_wall": "Refined Gabbro Tile Wall",
+  "block.ninnis_caves.refined_gabbro_tile_slab": "Refined Gabbro Tile Slab",
+  "block.ninnis_caves.refined_gabbro_tile_stairs": "Refined Gabbro Tile Stairs"
 }

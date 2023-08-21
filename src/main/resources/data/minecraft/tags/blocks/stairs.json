@@ -7,7 +7,9 @@
     "ninnis_caves:limestone_brick_stairs",
     "ninnis_caves:shale_stairs",
     "ninnis_caves:refined_shale_stairs",
+    "ninnis_caves:refined_shale_tile_stairs",
     "ninnis_caves:gabbro_stairs",
-    "ninnis_caves:refined_gabbro_stairs"
+    "ninnis_caves:refined_gabbro_stairs",
+    "ninnis_caves:refined_gabbro_tile_stairs"
   ]
 }

@@ -57,6 +57,10 @@ public class NCCreativeModeTab {
                 output.accept(REFINED_SHALE);
                 output.accept(REFINED_SHALE_STAIRS);
                 output.accept(REFINED_SHALE_SLAB);
+                output.accept(REFINED_SHALE_TILES);
+                output.accept(REFINED_SHALE_TILE_STAIRS);
+                output.accept(REFINED_SHALE_TILE_SLAB);
+                output.accept(REFINED_SHALE_TILE_WALL);
 
                 //gabbro blocks
                 output.accept(GABBRO);
@@ -66,6 +70,10 @@ public class NCCreativeModeTab {
                 output.accept(REFINED_GABBRO);
                 output.accept(REFINED_GABBRO_STAIRS);
                 output.accept(REFINED_GABBRO_SLAB);
+                output.accept(REFINED_GABBRO_TILES);
+                output.accept(REFINED_GABBRO_TILE_STAIRS);
+                output.accept(REFINED_GABBRO_TILE_SLAB);
+                output.accept(REFINED_GABBRO_TILE_WALL);
 
 
             }).build()
@@ -103,6 +111,17 @@ public class NCCreativeModeTab {
                     ORNATE_DIORITE_PILLAR
             );
             entries.addBefore(Items.REINFORCED_DEEPSLATE,
+                    SHALE,
+                    SHALE_STAIRS,
+                    SHALE_SLAB,
+                    SHALE_WALL,
+                    REFINED_SHALE,
+                    REFINED_SHALE_STAIRS,
+                    REFINED_SHALE_SLAB,
+                    REFINED_SHALE_TILES,
+                    REFINED_SHALE_TILE_STAIRS,
+                    REFINED_SHALE_TILE_SLAB,
+                    REFINED_SHALE_TILE_WALL,
                     GABBRO,
                     GABBRO_STAIRS,
                     GABBRO_SLAB,
@@ -110,13 +129,10 @@ public class NCCreativeModeTab {
                     REFINED_GABBRO,
                     REFINED_GABBRO_STAIRS,
                     REFINED_GABBRO_SLAB,
-                    SHALE,
-                    SHALE_STAIRS,
-                    SHALE_SLAB,
-                    SHALE_WALL,
-                    REFINED_SHALE,
-                    REFINED_SHALE_STAIRS,
-                    REFINED_SHALE_SLAB
+                    REFINED_GABBRO_TILES,
+                    REFINED_GABBRO_TILE_STAIRS,
+                    REFINED_GABBRO_TILE_SLAB,
+                    REFINED_GABBRO_TILE_WALL
             );
         });
 

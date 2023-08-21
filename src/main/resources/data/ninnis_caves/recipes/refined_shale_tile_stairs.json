@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ninnis_caves:refined_shale_tiles"
+    }
+  },
+  "result": {
+    "item": "ninnis_caves:refined_shale_tile_stairs",
+    "count": 4
+  }
+}

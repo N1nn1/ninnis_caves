@@ -54,6 +54,10 @@ public class NCItems {
     public static final Item REFINED_SHALE = register("refined_shale", new BlockItem(NCBlocks.REFINED_SHALE, new FabricItemSettings()));
     public static final Item REFINED_SHALE_STAIRS = register("refined_shale_stairs", new BlockItem(NCBlocks.REFINED_SHALE_STAIRS, new FabricItemSettings()));
     public static final Item REFINED_SHALE_SLAB = register("refined_shale_slab", new BlockItem(NCBlocks.REFINED_SHALE_SLAB, new FabricItemSettings()));
+    public static final Item REFINED_SHALE_TILES = register("refined_shale_tiles", new BlockItem(NCBlocks.REFINED_SHALE_TILES, new FabricItemSettings()));
+    public static final Item REFINED_SHALE_TILE_STAIRS = register("refined_shale_tile_stairs", new BlockItem(NCBlocks.REFINED_SHALE_TILE_STAIRS, new FabricItemSettings()));
+    public static final Item REFINED_SHALE_TILE_SLAB = register("refined_shale_tile_slab", new BlockItem(NCBlocks.REFINED_SHALE_TILE_SLAB, new FabricItemSettings()));
+    public static final Item REFINED_SHALE_TILE_WALL = register("refined_shale_tile_wall", new BlockItem(NCBlocks.REFINED_SHALE_TILE_WALL, new FabricItemSettings()));
 
     //gabbro blocks
     public static final Item GABBRO = register("gabbro", new BlockItem(NCBlocks.GABBRO, new FabricItemSettings()));
@@ -63,6 +67,10 @@ public class NCItems {
     public static final Item REFINED_GABBRO = register("refined_gabbro", new BlockItem(NCBlocks.REFINED_GABBRO, new FabricItemSettings()));
     public static final Item REFINED_GABBRO_STAIRS = register("refined_gabbro_stairs", new BlockItem(NCBlocks.REFINED_GABBRO_STAIRS, new FabricItemSettings()));
     public static final Item REFINED_GABBRO_SLAB = register("refined_gabbro_slab", new BlockItem(NCBlocks.REFINED_GABBRO_SLAB, new FabricItemSettings()));
+    public static final Item REFINED_GABBRO_TILES = register("refined_gabbro_tiles", new BlockItem(NCBlocks.REFINED_GABBRO_TILES, new FabricItemSettings()));
+    public static final Item REFINED_GABBRO_TILE_STAIRS = register("refined_gabbro_tile_stairs", new BlockItem(NCBlocks.REFINED_GABBRO_TILE_STAIRS, new FabricItemSettings()));
+    public static final Item REFINED_GABBRO_TILE_SLAB = register("refined_gabbro_tile_slab", new BlockItem(NCBlocks.REFINED_GABBRO_TILE_SLAB, new FabricItemSettings()));
+    public static final Item REFINED_GABBRO_TILE_WALL = register("refined_gabbro_tile_wall", new BlockItem(NCBlocks.REFINED_GABBRO_TILE_WALL, new FabricItemSettings()));
 
     private static Item register(String id, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NinnisCaves.MOD_ID, id), item);

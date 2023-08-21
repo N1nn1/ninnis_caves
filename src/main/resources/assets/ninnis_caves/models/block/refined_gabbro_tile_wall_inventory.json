@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "ninnis_caves:block/refined_gabbro_tiles"
+  }
+}

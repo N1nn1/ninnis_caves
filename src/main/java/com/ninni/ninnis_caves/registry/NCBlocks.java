@@ -53,6 +53,10 @@ public class NCBlocks {
     public static final Block REFINED_SHALE = register("refined_shale", new Block(BlockBehaviour.Properties.copy(SHALE)));
     public static final Block REFINED_SHALE_STAIRS = register("refined_shale_stairs", new StairBlock(REFINED_SHALE.defaultBlockState(), BlockBehaviour.Properties.copy(REFINED_SHALE)));
     public static final Block REFINED_SHALE_SLAB = register("refined_shale_slab", new SlabBlock(BlockBehaviour.Properties.copy(REFINED_SHALE)));
+    public static final Block REFINED_SHALE_TILES = register("refined_shale_tiles", new Block(BlockBehaviour.Properties.copy(REFINED_SHALE)));
+    public static final Block REFINED_SHALE_TILE_STAIRS = register("refined_shale_tile_stairs", new StairBlock(REFINED_SHALE_TILES.defaultBlockState(), BlockBehaviour.Properties.copy(REFINED_SHALE_TILES)));
+    public static final Block REFINED_SHALE_TILE_SLAB = register("refined_shale_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(REFINED_SHALE_TILES)));
+    public static final Block REFINED_SHALE_TILE_WALL = register("refined_shale_tile_wall", new WallBlock(BlockBehaviour.Properties.copy(REFINED_SHALE_TILES)));
 
     //gabbro blocks
     public static final Block GABBRO = register("gabbro", new Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).strength(1.5F, 4.0F).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1F)));
@@ -62,6 +66,10 @@ public class NCBlocks {
     public static final Block REFINED_GABBRO = register("refined_gabbro", new Block(BlockBehaviour.Properties.copy(GABBRO)));
     public static final Block REFINED_GABBRO_STAIRS = register("refined_gabbro_stairs", new StairBlock(REFINED_GABBRO.defaultBlockState(), BlockBehaviour.Properties.copy(REFINED_GABBRO)));
     public static final Block REFINED_GABBRO_SLAB = register("refined_gabbro_slab", new SlabBlock(BlockBehaviour.Properties.copy(REFINED_GABBRO)));
+    public static final Block REFINED_GABBRO_TILES = register("refined_gabbro_tiles", new Block(BlockBehaviour.Properties.copy(REFINED_GABBRO)));
+    public static final Block REFINED_GABBRO_TILE_STAIRS = register("refined_gabbro_tile_stairs", new StairBlock(REFINED_GABBRO_TILES.defaultBlockState(), BlockBehaviour.Properties.copy(REFINED_GABBRO_TILES)));
+    public static final Block REFINED_GABBRO_TILE_SLAB = register("refined_gabbro_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(REFINED_GABBRO_TILES)));
+    public static final Block REFINED_GABBRO_TILE_WALL = register("refined_gabbro_tile_wall", new WallBlock(BlockBehaviour.Properties.copy(REFINED_GABBRO_TILES)));
 
     private static Block register(String id, Block block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(NinnisCaves.MOD_ID, id), block);

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ninnis_caves:block/refined_shale_tiles",
+    "top": "ninnis_caves:block/refined_shale_tiles",
+    "side": "ninnis_caves:block/refined_shale_tiles"
+  }
+}
