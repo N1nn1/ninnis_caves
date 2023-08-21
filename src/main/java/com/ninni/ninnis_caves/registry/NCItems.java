@@ -16,15 +16,22 @@ public class NCItems {
 
     //andesite blocks
     public static final Item ANDESITE_SHINGLES = register("andesite_shingles", new BlockItem(NCBlocks.ANDESITE_SHINGLES, new FabricItemSettings()));
+    public static final Item ANDESITE_PEDISTAL = register("andesite_pedistal", new BlockItem(NCBlocks.ANDESITE_PEDISTAL, new FabricItemSettings()));
     public static final Item ANDESITE_SHINGLE_STAIRS = register("andesite_shingle_stairs", new BlockItem(NCBlocks.ANDESITE_SHINGLE_STAIRS, new FabricItemSettings()));
     public static final Item ANDESITE_SHINGLE_SLAB = register("andesite_shingle_slab", new BlockItem(NCBlocks.ANDESITE_SHINGLE_SLAB, new FabricItemSettings()));
     public static final Item ANDESITE_SHINGLE_WALL = register("andesite_shingle_wall", new BlockItem(NCBlocks.ANDESITE_SHINGLE_WALL, new FabricItemSettings()));
 
     //granite blocks
     public static final Item GRANITE_COPPER_ORE = register("granite_copper_ore", new BlockItem(NCBlocks.GRANITE_COPPER_ORE, new FabricItemSettings()));
+    public static final Item GRANITE_TILES = register("granite_tiles", new BlockItem(NCBlocks.GRANITE_TILES, new FabricItemSettings()));
+    public static final Item GRANITE_TILE_STAIRS = register("granite_tile_stairs", new BlockItem(NCBlocks.GRANITE_TILE_STAIRS, new FabricItemSettings()));
+    public static final Item GRANITE_TILE_SLAB = register("granite_tile_slab", new BlockItem(NCBlocks.GRANITE_TILE_SLAB, new FabricItemSettings()));
+    public static final Item GRANITE_TILE_WALL = register("granite_tile_wall", new BlockItem(NCBlocks.GRANITE_TILE_WALL, new FabricItemSettings()));
 
     //diorite blocks
     public static final Item DIORITE_COAL_ORE = register("diorite_coal_ore", new BlockItem(NCBlocks.DIORITE_COAL_ORE, new FabricItemSettings()));
+    public static final Item ORNATE_DIORITE = register("ornate_diorite", new BlockItem(NCBlocks.ORNATE_DIORITE, new FabricItemSettings()));
+    public static final Item ORNATE_DIORITE_PILLAR = register("ornate_diorite_pillar", new BlockItem(NCBlocks.ORNATE_DIORITE_PILLAR, new FabricItemSettings()));
 
     //limestone blocks
     public static final Item LIMESTONE = register("limestone", new BlockItem(NCBlocks.LIMESTONE, new FabricItemSettings()));

@@ -1,6 +1,7 @@
 package com.ninni.ninnis_caves.registry;
 
 import com.ninni.ninnis_caves.NinnisCaves;
+import com.ninni.ninnis_caves.block.AndesitePedistalBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -14,6 +15,7 @@ import net.minecraft.world.level.material.MapColor;
 public class NCBlocks {
 
     //andesite blocks
+    public static final Block ANDESITE_PEDISTAL = register("andesite_pedistal", new AndesitePedistalBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).noOcclusion()));
     public static final Block ANDESITE_SHINGLES = register("andesite_shingles", new Block(BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
     public static final Block ANDESITE_SHINGLE_STAIRS = register("andesite_shingle_stairs", new StairBlock(ANDESITE_SHINGLES.defaultBlockState(), BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
     public static final Block ANDESITE_SHINGLE_SLAB = register("andesite_shingle_slab", new SlabBlock(BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
@@ -21,9 +23,15 @@ public class NCBlocks {
 
     //granite blocks
     public static final Block GRANITE_COPPER_ORE = register("granite_copper_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.DIRT)));
+    public static final Block GRANITE_TILES = register("granite_tiles", new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
+    public static final Block GRANITE_TILE_STAIRS = register("granite_tile_stairs", new StairBlock(GRANITE_TILES.defaultBlockState(), BlockBehaviour.Properties.copy(GRANITE_TILES)));
+    public static final Block GRANITE_TILE_SLAB = register("granite_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(GRANITE_TILES)));
+    public static final Block GRANITE_TILE_WALL = register("granite_tile_wall", new WallBlock(BlockBehaviour.Properties.copy(GRANITE_TILES)));
 
     //diorite blocks
     public static final Block DIORITE_COAL_ORE = register("diorite_coal_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).mapColor(MapColor.QUARTZ), UniformInt.of(0, 2)));
+    public static final Block ORNATE_DIORITE = register("ornate_diorite", new GlazedTerracottaBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)));
+    public static final Block ORNATE_DIORITE_PILLAR = register("ornate_diorite_pillar", new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)));
 
     //limestone blocks
     public static final Block LIMESTONE = register("limestone", new Block(BlockBehaviour.Properties.of().mapColor(MapColor.QUARTZ).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1F)));

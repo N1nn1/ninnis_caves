@@ -18,7 +18,9 @@ public class NinnisCaves implements ModInitializer {
 	public void onInitialize() {
 		Reflection.initialize(
 				NCBlocks.class,
+				NCBlockEntityTypes.class,
 				NCItems.class,
+				NCStats.class,
 				NCCreativeModeTab.class,
 				NCFeatures.class
 		);

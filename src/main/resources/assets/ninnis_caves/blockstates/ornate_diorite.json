@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "ninnis_caves:block/ornate_diorite",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "ninnis_caves:block/ornate_diorite",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "ninnis_caves:block/ornate_diorite"
+    },
+    "facing=west": {
+      "model": "ninnis_caves:block/ornate_diorite",
+      "y": 90
+    }
+  }
+}

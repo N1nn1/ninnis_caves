@@ -18,6 +18,7 @@ public class NCCreativeModeTab {
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(NINNIS_CAVES::getDefaultInstance).title(Component.translatable("ninnis_caves.item_group")).displayItems((featureFlagSet, output) -> {
 
                 //andesite blocks
+                output.accept(ANDESITE_PEDISTAL);
                 output.accept(ANDESITE_SHINGLES);
                 output.accept(ANDESITE_SHINGLE_STAIRS);
                 output.accept(ANDESITE_SHINGLE_SLAB);
@@ -25,9 +26,15 @@ public class NCCreativeModeTab {
 
                 //granite blocks
                 output.accept(GRANITE_COPPER_ORE);
+                output.accept(GRANITE_TILES);
+                output.accept(GRANITE_TILE_STAIRS);
+                output.accept(GRANITE_TILE_SLAB);
+                output.accept(GRANITE_TILE_WALL);
 
                 //diorite blocks
                 output.accept(DIORITE_COAL_ORE);
+                output.accept(ORNATE_DIORITE);
+                output.accept(ORNATE_DIORITE_PILLAR);
 
                 //limestone blocks
                 output.accept(LIMESTONE);
@@ -79,6 +86,16 @@ public class NCCreativeModeTab {
                     ANDESITE_SHINGLE_SLAB,
                     ANDESITE_SHINGLE_WALL
             );
+            entries.addAfter(Items.POLISHED_GRANITE_SLAB,
+                    GRANITE_TILES,
+                    GRANITE_TILE_STAIRS,
+                    GRANITE_TILE_SLAB,
+                    GRANITE_TILE_WALL
+            );
+            entries.addAfter(Items.POLISHED_DIORITE_SLAB,
+                    ORNATE_DIORITE,
+                    ORNATE_DIORITE_PILLAR
+            );
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(entries -> {
@@ -94,7 +111,12 @@ public class NCCreativeModeTab {
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> {
+            entries.addBefore(Items.ITEM_FRAME, ANDESITE_PEDISTAL);
             entries.addBefore(Items.TINTED_GLASS, REINFORCED_GLASS, REINFORCED_GLASS_PANE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(entries -> {
+            entries.addBefore(Items.OBSERVER, ANDESITE_PEDISTAL);
         });
     }
 

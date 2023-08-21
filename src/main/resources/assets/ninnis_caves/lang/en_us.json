@@ -3,14 +3,22 @@
 
   "item.ninnis_caves.ninnis_caves": "Ninni's Caves",
 
+  "block.ninnis_caves.andesite_pedistal": "Andesite Pedistal",
+  "stat.minecraft.interact_with_pedistal": "Interactions with Andesite Pedistal",
   "block.ninnis_caves.andesite_shingles": "Andesite Shingles",
   "block.ninnis_caves.andesite_shingle_wall": "Andesite Shingle Wall",
   "block.ninnis_caves.andesite_shingle_slab": "Andesite Shingle Slab",
   "block.ninnis_caves.andesite_shingle_stairs": "Andesite Shingle Stairs",
 
   "block.ninnis_caves.granite_copper_ore": "Granite Copper Ore",
+  "block.ninnis_caves.granite_tiles": "Granite Tiles",
+  "block.ninnis_caves.granite_tile_wall": "Granite Tile Wall",
+  "block.ninnis_caves.granite_tile_slab": "Granite Tile Slab",
+  "block.ninnis_caves.granite_tile_stairs": "Granite Tile Stairs",
 
   "block.ninnis_caves.diorite_coal_ore": "Diorite Coal Ore",
+  "block.ninnis_caves.ornate_diorite": "Ornate Diorite",
+  "block.ninnis_caves.ornate_diorite_piller": "Ornate Diorite Pillar",
 
   "block.ninnis_caves.limestone": "Limestone",
   "block.ninnis_caves.limestone_wall": "Limestone Wall",

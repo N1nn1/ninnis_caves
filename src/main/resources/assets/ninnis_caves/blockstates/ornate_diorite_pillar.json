@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "ninnis_caves:block/ornate_diorite_pillar",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "ninnis_caves:block/ornate_diorite_pillar"
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "ninnis_caves:block/ornate_diorite_pillar",
+        "x": 90
+      }
+    ]
+  }
+}
