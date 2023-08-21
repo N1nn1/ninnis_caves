@@ -27,6 +27,7 @@ public class NCItems {
     public static final Item GRANITE_TILE_STAIRS = register("granite_tile_stairs", new BlockItem(NCBlocks.GRANITE_TILE_STAIRS, new FabricItemSettings()));
     public static final Item GRANITE_TILE_SLAB = register("granite_tile_slab", new BlockItem(NCBlocks.GRANITE_TILE_SLAB, new FabricItemSettings()));
     public static final Item GRANITE_TILE_WALL = register("granite_tile_wall", new BlockItem(NCBlocks.GRANITE_TILE_WALL, new FabricItemSettings()));
+    public static final Item MOLTEN_GRANITE = register("molten_granite", new BlockItem(NCBlocks.MOLTEN_GRANITE, new FabricItemSettings()));
 
     //diorite blocks
     public static final Item DIORITE_COAL_ORE = register("diorite_coal_ore", new BlockItem(NCBlocks.DIORITE_COAL_ORE, new FabricItemSettings()));
