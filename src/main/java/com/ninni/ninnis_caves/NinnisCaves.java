@@ -22,7 +22,8 @@ public class NinnisCaves implements ModInitializer {
 				NCItems.class,
 				NCStats.class,
 				NCCreativeModeTab.class,
-				NCFeatures.class
+				NCFeatures.class,
+				NCStructureProcessorTypes.class
 		);
 		NCVanillaIntegration.serverInit();
 	}

@@ -2,14 +2,25 @@ package com.ninni.ninnis_caves.registry;
 
 import com.ninni.ninnis_caves.NinnisCaves;
 import com.ninni.ninnis_caves.block.AndesitePedestalBlock;
+import com.ninni.ninnis_caves.block.MoltenGraniteBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.GlassBlock;
+import net.minecraft.world.level.block.GlazedTerracottaBlock;
+import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 public class NCBlocks {
 
@@ -21,6 +32,7 @@ public class NCBlocks {
     public static final Block ANDESITE_SHINGLE_WALL = register("andesite_shingle_wall", new WallBlock(BlockBehaviour.Properties.copy(ANDESITE_SHINGLES)));
 
     //granite blocks
+    public static final Block MOLTEN_GRANITE = register("molten_granite", new MoltenGraniteBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE).pushReaction(PushReaction.DESTROY).mapColor(MapColor.DIRT)));
     public static final Block GRANITE_COPPER_ORE = register("granite_copper_ore", new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.DIRT)));
     public static final Block GRANITE_TILES = register("granite_tiles", new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
     public static final Block GRANITE_TILE_STAIRS = register("granite_tile_stairs", new StairBlock(GRANITE_TILES.defaultBlockState(), BlockBehaviour.Properties.copy(GRANITE_TILES)));

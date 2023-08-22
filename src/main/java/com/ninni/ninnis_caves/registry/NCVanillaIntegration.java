@@ -2,6 +2,8 @@ package com.ninni.ninnis_caves.registry;
 
 import com.ninni.ninnis_caves.NinnisCaves;
 import com.ninni.ninnis_caves.client.renderer.block.entity.AndesitePedistalBlockEntityRenderer;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
@@ -23,6 +25,7 @@ public class NCVanillaIntegration {
         registerBiomeModifications();
     }
 
+    @Environment(EnvType.CLIENT)
     public static void clientInit() {
         registerBlockEntityRenderer();
         registerBlockRenderLayers();

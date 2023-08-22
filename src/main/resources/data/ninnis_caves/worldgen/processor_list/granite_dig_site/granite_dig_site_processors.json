@@ -1,0 +1,7 @@
+{
+  "processors": [
+    {
+      "processor_type": "ninnis_caves:dig_site"
+    }
+  ]
+}
