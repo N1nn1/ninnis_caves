@@ -14,8 +14,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
@@ -27,11 +25,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class MoltenGraniteBlock extends Block {
-    private static final BooleanProperty DROP = BooleanProperty.create("drop");
 
     public MoltenGraniteBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.stateDefinition.any().setValue(DROP, false));
     }
 
     @Override
@@ -40,11 +36,6 @@ public class MoltenGraniteBlock extends Block {
             entity.hurt(level.damageSources().hotFloor(), 1.0f);
         }
         super.stepOn(level, blockPos, blockState, entity);
-    }
-
-    @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(DROP);
     }
 
     @Override
