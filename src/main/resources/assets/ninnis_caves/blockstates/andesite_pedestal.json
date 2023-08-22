@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "ninnis_caves:block/andesite_pedestal",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "ninnis_caves:block/andesite_pedestal",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "ninnis_caves:block/andesite_pedestal"
+    },
+    "facing=south": {
+      "model": "ninnis_caves:block/andesite_pedestal",
+      "y": 180
+    }
+  }
+}

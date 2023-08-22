@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ninnis_caves:block/refined_shale_slab"
+    },
+    "type=double": {
+      "model": "ninnis_caves:block/refined_shale"
+    },
+    "type=top": {
+      "model": "ninnis_caves:block/refined_shale_slab_top"
+    }
+  }
+}

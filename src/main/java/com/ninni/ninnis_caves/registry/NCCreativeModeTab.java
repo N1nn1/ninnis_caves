@@ -18,7 +18,7 @@ public class NCCreativeModeTab {
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(NINNIS_CAVES::getDefaultInstance).title(Component.translatable("ninnis_caves.item_group")).displayItems((featureFlagSet, output) -> {
 
                 //andesite blocks
-                output.accept(ANDESITE_PEDISTAL);
+                output.accept(ANDESITE_PEDESTAL);
                 output.accept(ANDESITE_SHINGLES);
                 output.accept(ANDESITE_SHINGLE_STAIRS);
                 output.accept(ANDESITE_SHINGLE_SLAB);
@@ -54,12 +54,26 @@ public class NCCreativeModeTab {
                 output.accept(SHALE_STAIRS);
                 output.accept(SHALE_SLAB);
                 output.accept(SHALE_WALL);
+                output.accept(REFINED_SHALE);
+                output.accept(REFINED_SHALE_STAIRS);
+                output.accept(REFINED_SHALE_SLAB);
+                output.accept(REFINED_SHALE_TILES);
+                output.accept(REFINED_SHALE_TILE_STAIRS);
+                output.accept(REFINED_SHALE_TILE_SLAB);
+                output.accept(REFINED_SHALE_TILE_WALL);
 
                 //gabbro blocks
                 output.accept(GABBRO);
                 output.accept(GABBRO_STAIRS);
                 output.accept(GABBRO_SLAB);
                 output.accept(GABBRO_WALL);
+                output.accept(REFINED_GABBRO);
+                output.accept(REFINED_GABBRO_STAIRS);
+                output.accept(REFINED_GABBRO_SLAB);
+                output.accept(REFINED_GABBRO_TILES);
+                output.accept(REFINED_GABBRO_TILE_STAIRS);
+                output.accept(REFINED_GABBRO_TILE_SLAB);
+                output.accept(REFINED_GABBRO_TILE_WALL);
 
 
             }).build()
@@ -96,6 +110,30 @@ public class NCCreativeModeTab {
                     ORNATE_DIORITE,
                     ORNATE_DIORITE_PILLAR
             );
+            entries.addBefore(Items.REINFORCED_DEEPSLATE,
+                    SHALE,
+                    SHALE_STAIRS,
+                    SHALE_SLAB,
+                    SHALE_WALL,
+                    REFINED_SHALE,
+                    REFINED_SHALE_STAIRS,
+                    REFINED_SHALE_SLAB,
+                    REFINED_SHALE_TILES,
+                    REFINED_SHALE_TILE_STAIRS,
+                    REFINED_SHALE_TILE_SLAB,
+                    REFINED_SHALE_TILE_WALL,
+                    GABBRO,
+                    GABBRO_STAIRS,
+                    GABBRO_SLAB,
+                    GABBRO_WALL,
+                    REFINED_GABBRO,
+                    REFINED_GABBRO_STAIRS,
+                    REFINED_GABBRO_SLAB,
+                    REFINED_GABBRO_TILES,
+                    REFINED_GABBRO_TILE_STAIRS,
+                    REFINED_GABBRO_TILE_SLAB,
+                    REFINED_GABBRO_TILE_WALL
+            );
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(entries -> {
@@ -111,12 +149,12 @@ public class NCCreativeModeTab {
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> {
-            entries.addBefore(Items.ITEM_FRAME, ANDESITE_PEDISTAL);
+            entries.addBefore(Items.ITEM_FRAME, ANDESITE_PEDESTAL);
             entries.addBefore(Items.TINTED_GLASS, REINFORCED_GLASS, REINFORCED_GLASS_PANE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(entries -> {
-            entries.addBefore(Items.OBSERVER, ANDESITE_PEDISTAL);
+            entries.addBefore(Items.OBSERVER, ANDESITE_PEDESTAL);
         });
     }
 

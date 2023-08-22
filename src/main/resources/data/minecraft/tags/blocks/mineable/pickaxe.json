@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ninnis_caves:andesite_pedistal",
+    "ninnis_caves:andesite_pedestal",
     "ninnis_caves:andesite_shingles",
     "ninnis_caves:andesite_shingle_slab",
     "ninnis_caves:andesite_shingle_stairs",
@@ -29,10 +29,28 @@
     "ninnis_caves:shale_slab",
     "ninnis_caves:shale_stairs",
     "ninnis_caves:shale_wall",
+    "ninnis_caves:refined_shale",
+    "ninnis_caves:refined_shale_slab",
+    "ninnis_caves:refined_shale_stairs",
+    "ninnis_caves:refined_shale_tiles",
+    "ninnis_caves:refined_shale_tile_slab",
+    "ninnis_caves:refined_shale_tile_stairs",
+    "ninnis_caves:refined_shale_tile_wall",
+    "ninnis_caves:refined_shale_tiles",
+    "ninnis_caves:refined_shale_tile_slab",
+    "ninnis_caves:refined_shale_tile_stairs",
+    "ninnis_caves:refined_shale_tile_wall",
     "ninnis_caves:gabbro",
     "ninnis_caves:gabbro_slab",
     "ninnis_caves:gabbro_stairs",
     "ninnis_caves:gabbro_wall",
-    "ninnis_caves:molten_granite"
+    "ninnis_caves:molten_granite",
+    "ninnis_caves:refined_gabbro",
+    "ninnis_caves:refined_gabbro_slab",
+    "ninnis_caves:refined_gabbro_stairs",
+    "ninnis_caves:refined_gabbro_tiles",
+    "ninnis_caves:refined_gabbro_tile_slab",
+    "ninnis_caves:refined_gabbro_tile_stairs",
+    "ninnis_caves:refined_gabbro_tile_wall"
   ]
 }

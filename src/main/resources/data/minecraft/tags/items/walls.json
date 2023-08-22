@@ -6,6 +6,8 @@
     "ninnis_caves:limestone_wall",
     "ninnis_caves:limestone_brick_wall",
     "ninnis_caves:shale_wall",
-    "ninnis_caves:gabbro_wall"
+    "ninnis_caves:refined_shale_tile_wall",
+    "ninnis_caves:gabbro_wall",
+    "ninnis_caves:refined_gabbro_tile_wall"
   ]
 }

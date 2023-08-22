@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ninnis_caves:block/refined_shale_tiles"
+  }
+}

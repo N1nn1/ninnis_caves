@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ninnis_caves:block/refined_gabbro_tile_slab"
+    },
+    "type=double": {
+      "model": "ninnis_caves:block/refined_gabbro_tiles"
+    },
+    "type=top": {
+      "model": "ninnis_caves:block/refined_gabbro_tile_slab_top"
+    }
+  }
+}
