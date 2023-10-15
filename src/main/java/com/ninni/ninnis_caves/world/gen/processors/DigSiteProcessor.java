@@ -29,7 +29,7 @@ public class DigSiteProcessor extends StructureProcessor {
     public StructureTemplate.StructureBlockInfo processBlock(LevelReader levelReader, BlockPos blockPos, BlockPos blockPos2, StructureTemplate.StructureBlockInfo structureBlockInfo, StructureTemplate.StructureBlockInfo structureBlockInfo2, StructurePlaceSettings structurePlaceSettings) {
         if (structureBlockInfo2.state().is(Blocks.LAPIS_BLOCK)) {
             CompoundTag compoundTag = new CompoundTag();
-            compoundTag.putString("LootTable", NCBuiltinLootTables.GRANITE_DIG_SITE.toString());
+            compoundTag.putString("LootTable", NCBuiltinLootTables.GRANITE_DIG_SITE_BARREL.toString());
             return new StructureTemplate.StructureBlockInfo(structureBlockInfo2.pos(), Blocks.BARREL.defaultBlockState(), compoundTag);
         }
         if (structureBlockInfo2.state().is(Blocks.EMERALD_BLOCK)) {
@@ -37,7 +37,7 @@ public class DigSiteProcessor extends StructureProcessor {
         }
         if (structureBlockInfo2.state().is(Blocks.DIAMOND_BLOCK)) {
             CompoundTag compoundTag = new CompoundTag();
-            compoundTag.putString("LootTable", NCBuiltinLootTables.GRANITE_DIG_SITE.toString());
+            compoundTag.putString("LootTable", NCBuiltinLootTables.GRANITE_DIG_SITE_GRAVEL.toString());
             return new StructureTemplate.StructureBlockInfo(structureBlockInfo2.pos(), Blocks.SUSPICIOUS_GRAVEL.defaultBlockState(), compoundTag);
         }
         return structureBlockInfo2;

@@ -30,6 +30,7 @@ public class NCCreativeModeTab {
                 output.accept(GRANITE_TILE_STAIRS);
                 output.accept(GRANITE_TILE_SLAB);
                 output.accept(GRANITE_TILE_WALL);
+                output.accept(MOLTEN_GRANITE);
 
                 //diorite blocks
                 output.accept(DIORITE_COAL_ORE);

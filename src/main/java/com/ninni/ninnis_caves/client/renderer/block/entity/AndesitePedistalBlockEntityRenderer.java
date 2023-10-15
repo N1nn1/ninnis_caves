@@ -40,6 +40,12 @@ public class AndesitePedistalBlockEntityRenderer implements BlockEntityRenderer<
                 poseStack.mulPose(Axis.YP.rotationDegrees(d));
                 poseStack.mulPose(Axis.ZP.rotationDegrees(135));
             }
+            if (itemStack.getItem() instanceof TridentItem) {
+                poseStack.scale(0.8f, 0.8f, 0.8f);
+                poseStack.translate(0.625f, 1.125f, 0.625f);
+                poseStack.mulPose(Axis.YP.rotationDegrees(d));
+                poseStack.mulPose(Axis.ZP.rotationDegrees(135));
+            }
             if (itemStack.getItem() instanceof ShovelItem) {
                 poseStack.scale(0.8f, 0.8f, 0.8f);
                 poseStack.translate(0.625f, 1.25f, 0.625f);

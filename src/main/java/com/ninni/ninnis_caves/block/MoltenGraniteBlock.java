@@ -51,7 +51,7 @@ public class MoltenGraniteBlock extends Block {
             } else {
                 LootParams.Builder builder = new LootParams.Builder(serverLevel).withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(blockPos)).withParameter(LootContextParams.TOOL, ItemStack.EMPTY).withOptionalParameter(LootContextParams.BLOCK_ENTITY, blockEntity);
                 LootParams lootParams = builder.withParameter(LootContextParams.BLOCK_STATE, blockState).create(LootContextParamSets.BLOCK);
-                LootTable lootTable = lootParams.getLevel().getServer().getLootData().getLootTable(NCBuiltinLootTables.GRANITE_DIG_SITE);
+                LootTable lootTable = lootParams.getLevel().getServer().getLootData().getLootTable(NCBuiltinLootTables.GRANITE_DIG_SITE_GRANITE);
                 ObjectArrayList<ItemStack> list = lootTable.getRandomItems(lootParams);
                 for (ItemStack stack : list) {
                     popResource(level, blockPos, stack);

@@ -12,6 +12,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.TridentItem;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -48,7 +49,7 @@ public class AndesitePedestalBlock extends BaseEntityBlock implements SimpleWate
         ItemStack stackInHand = player.getItemInHand(hand);
 
         if (blockEntity instanceof AndesitePedestalBlockEntity pedistal) {
-            if (!level.isClientSide && stackInHand.getItem() instanceof TieredItem && !stackInHand.isEmpty() && pedistal.addItem(player, player.getAbilities().instabuild ? stackInHand.copy() : stackInHand) ) {
+            if (!level.isClientSide && (stackInHand.getItem() instanceof TieredItem || stackInHand.getItem() instanceof TridentItem) && !stackInHand.isEmpty() && pedistal.addItem(player, player.getAbilities().instabuild ? stackInHand.copy() : stackInHand) ) {
                 player.awardStat(NCStats.INTERACT_WITH_PEDISTAL);
                 level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 1, 1);
                 return InteractionResult.SUCCESS;
